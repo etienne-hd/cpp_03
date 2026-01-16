@@ -6,7 +6,7 @@
 /*   By: ehode <ehode@student.42angouleme.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 17:55:42 by ehode             #+#    #+#             */
-/*   Updated: 2025/12/14 17:47:34 by ehode            ###   ########.fr       */
+/*   Updated: 2026/01/16 19:10:01 by ehode            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 int main(void)
 {
-    // Test 1
     std::cout << "- Test 1" << std::endl;
     {
         ClapTrap clapTrap("sabartho");
@@ -26,7 +25,6 @@ int main(void)
         clapTrap.takeDamage(1000);
     }
 
-    // Test 2
     std::cout << "- Test 2" << std::endl;
     {
         ClapTrap clapTrap("mbatty");
@@ -35,5 +33,12 @@ int main(void)
         clapTrap.takeDamage(3);
         clapTrap.attack("ehode");
         clapTrap.beRepaired(25);
+    }
+
+    std::cout << "- Test 3" << std::endl;
+    {
+        ClapTrap clapTrap1("alaualik");
+        ClapTrap clapTrap2 = clapTrap1;
+        clapTrap2.attack("ehode");
     }
 }

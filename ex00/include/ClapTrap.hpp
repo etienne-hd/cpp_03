@@ -6,11 +6,11 @@
 /*   By: ehode <ehode@student.42angouleme.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 17:55:56 by ehode             #+#    #+#             */
-/*   Updated: 2025/12/14 17:37:18 by ehode            ###   ########.fr       */
+/*   Updated: 2026/01/16 19:09:49 by ehode            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
+#include <string>
 
 class ClapTrap
 {

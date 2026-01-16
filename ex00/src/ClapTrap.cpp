@@ -6,7 +6,7 @@
 /*   By: ehode <ehode@student.42angouleme.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 17:56:20 by ehode             #+#    #+#             */
-/*   Updated: 2025/12/14 17:45:02 by ehode            ###   ########.fr       */
+/*   Updated: 2026/01/16 19:02:40 by ehode            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,7 @@ ClapTrap::ClapTrap(std::string name)
 ClapTrap::ClapTrap(const ClapTrap &clapTrap)
 {
     std::cout << "Copy constructor called" << std::endl;
-    this->name = clapTrap.name;
-    this->hitPoints = clapTrap.hitPoints;
-    this->energyPoints = clapTrap.energyPoints;
-    this->attackDamage = clapTrap.attackDamage;
+    *this = clapTrap;
 }
 
 ClapTrap &ClapTrap::operator=(const ClapTrap &clapTrap)
