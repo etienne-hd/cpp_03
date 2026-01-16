@@ -1,4 +1,18 @@
-#include "ClapTrap.hpp"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ehode <ehode@student.42angouleme.fr>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/16 19:29:52 by ehode             #+#    #+#             */
+/*   Updated: 2026/01/16 19:30:06 by ehode            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef SCAVTRAP_HPP
+# define SCAVTRAP_HPP
+# include "ClapTrap.hpp"
 
 class ScavTrap: public ClapTrap
 {
@@ -11,3 +25,5 @@ class ScavTrap: public ClapTrap
 		void attack(const std::string &target);
 		void guardGate(void);
 };
+
+#endif

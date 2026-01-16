@@ -6,11 +6,13 @@
 /*   By: ehode <ehode@student.42angouleme.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 17:55:56 by ehode             #+#    #+#             */
-/*   Updated: 2026/01/16 19:15:09 by ehode            ###   ########.fr       */
+/*   Updated: 2026/01/16 19:29:33 by ehode            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string>
+#ifndef CLAPTRAP_HPP
+# define CLAPTRAP_HPP
+# include <string>
 
 class ClapTrap
 {
@@ -29,3 +31,5 @@ class ClapTrap
 		void takeDamage(unsigned int amount);
 		void beRepaired(unsigned int amount);
 };
+
+#endif
